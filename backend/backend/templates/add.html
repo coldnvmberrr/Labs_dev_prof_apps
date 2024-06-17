@@ -20,7 +20,12 @@
   </div>
   <div class="form-group row">
     <label for="model" class="col-5 col-form-label">Марка</label>
-    <input class="form-control" id="model" required type="text" name="model"/>
+      <select required id="model" class="form-select" >
+            <option selected disabled hidden>Выберите марку </option>
+          {% for model in models %}
+            <option value={{model.id}}>{{model.name}}</option>
+          {% endfor %}
+      </select>
   </div>
   <div class="form-group row align-items-center" style="margin-top: 10px">
     <button type="submit" class="btn btn-primary">Добавить</button>
