@@ -79,6 +79,7 @@ def input_car(data):
     data.append(new_object)
     return data
 
+
 def main():
     data = read_csv('data.csv')
 

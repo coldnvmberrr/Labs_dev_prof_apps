@@ -16,7 +16,7 @@
 """
 import numpy as np
 
-FILE_PATH = "./lab2/logs.txt"
+FILE_PATH = "./logs.txt"
 
 
 def calculation(matrix: np.ndarray, n: int, m: int):
